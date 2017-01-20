@@ -13,7 +13,8 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     	
     	<link rel="stylesheet" type="text/css" href="main.css" />
-    	
+    	<!-- best practice states we load css content in the head and javascript at the bottom of the body, remember we want the user to see and "feel"
+	the page or application is responding and loading. The sooner we can get to page load render the better user experience we will have. -->
     	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 
 	</head>
@@ -24,7 +25,11 @@
 
 
 <!-- Scripts -->
-
+		<!-- 
+			This placeholder is placed by JS. But, shouldn't this be rendered on page load _before_ the document is ready? What if I was on a slow connection?
+			I would want my user to see content, even if the page wasn't loaded already and hadn't called 'ready'. How would I code this into the HTML _then_ later replace it
+			with JS?
+		-->
 		<script type="text/javascript">
 
 			$(document).ready(function(){
@@ -46,6 +51,18 @@
 
 	-->
 
+		<!-- 
+			The two biggest things I see here:
+			1. There's a lot of javascript that's 'inline' in this HTML file. Can we move this javascript out to an external JS file?
+			2. We're calling document.ready() on each swatch. How could we include this all in one document.ready() statement?
+			
+			Further down the rabbit hole:
+			1. We're manually binding a click handler to each swatch by its ID. Ideally we want to avoid ID's _if_ possible because they create
+				nasty global variables that might break something later on down the line. How could we bind a handler to ALL potential swatches in fewer lines of code?
+				What if I was to expand this color picker app to support 256 colors? How could I painlessly add more HTML without having to write more JS?
+				What kind of selector could I iterate through to make this happen?
+			
+		-->
 
 		<script type="text/javascript">
                 $(document).ready(function(){
