@@ -11,7 +11,9 @@
     	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     	<meta name="viewport" content="width=device-width, initial-scale=1" />
     	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    	
     	<link rel="stylesheet" type="text/css" href="main.css" />
+    	
     	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 
 	</head>
@@ -20,39 +22,42 @@
 
 	<body>
 
+
+<!-- Scripts -->
+
 		<script type="text/javascript">
 
 		$(document).ready(function(){
-		 $("#placeholder").html("Dynamic Color Placeholder");
+		 $("#placeholder").html("Color Selection Text Placeholder");
 		});
 
 		</script>
 
 
 
-		<div>
+<!-- h1 content -->
 
-			<h1>Color Selector</h1>
+
+		<div class='title'>
+
+			<h1>Wix Design Color Selector</h1>
 	
 		</div>
 
 
-		<div>
-			<!-- Main content -->
+<!-- h2 content -->
 
-			<p> Color Selector Placeholder </p>
+		<div class='subtitle'>
 
-		
-<!-- Test Jquery div -->
+			<p> Choose a color!</p>
 
 		</div>	
 
-			<div id="placeholder">
-		</div>
 
-<!-- Swatches -->
-	
-		<div id='swatchlist'>
+<!-- Color Swatches -->
+
+	<div class='float' id='left'>
+		<div class='swatchlist'>
 			<div class="frame" id="swatch"></div>
 			<div class="frame" id="swatch1" ></div>
 			<div class="frame" id="swatch2" ></div>
@@ -61,6 +66,15 @@
 			<div class="frame" id="swatch5" ></div>
 			<div class="frame" id="swatch6" ></div>
 		</div>
+	</div>
+
+
+<!-- Dynamic Jquery placeholder -->
+
+	<div class='float' id='right'>
+		<div id="placeholder">
+		</div>
+	</div>
 
 	</body>
 

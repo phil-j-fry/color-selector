@@ -5,33 +5,92 @@ body {
     background-color: #f0f0f2;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     
 }
-div {
+
+div { 
+
+/*
     width: 600px;
     margin: 5em auto;
     padding: 30px;
     background-color: #fff;
     border-radius: 1em;
+*/
+
 }
 
-#swatchlist {
-	background: #fff;
+
+h1 {
+	color: #ffffff;
+	background-color: #459fed;
+	padding-left: 20px;
+}
+
+
+p {
+	font-weight: bold;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+
+
+#title {
+	background-color: #459fed;
+}
+
+#subtitle {
+
+
+}
+
+
+.float {
+	display: inline-block;
+}
+
+#left{
+	width: 200px;
+	float: left;
+	margin-left: 80px;
+	/* background-color: #d9dbf9; */
+}
+
+#right{
+	width: 500px;
+	margin-left: 50px;
+	margin-right: 200px;
+	padding-top: 200px;
+	/* background-color: #e4f9d9; */
+
+}
+
+
+.swatchlist {
+/*	background: #fff; */
 	width: 80px;
 	margin-top: 5px;
+	padding-left: 25px;
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
  }
 
 
 .frame {
-	width: 25px;
-	height: 25px;
+	width: 50px;
+	height: 50px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	border-radius: 1em;
+
 }
 
 #swatch {
 	background: #733ca6;
+	color: #733ca6;
 }
 
 #swatch1 {
@@ -56,4 +115,9 @@ div {
 
 #swatch6 {
 	background: #f27052;
+}
+
+#placeholder {
+	width: 400px;
+	padding-left: 150px;
 }
