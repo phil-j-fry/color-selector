@@ -16,45 +16,44 @@ div {
     border-radius: 1em;
 }
 
+#swatchlist {
+	background: #fff;
+	width: 80px;
+	margin-top: 5px;
+ }
+
+
+.frame {
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 #swatch {
-	width: 100px;
-	height: 100px;
 	background: #733ca6;
 }
 
 #swatch1 {
-	width: 100px;
-	height: 100px;
 	background: #b13dac;
 }
 
 #swatch2 {
-	width: 100px;
-	height: 100px;
 	background: #459fed;
 }
 
 #swatch3 {
-	width: 100px;
-	height: 100px;
 	background: #3cc7c5;
 }
 
 #swatch4 {
-	width: 100px;
-	height: 100px;
 	background: #65c888;
 }
 
 #swatch5 {
-	width: 100px;
-	height: 100px;
 	background: #faad4d;
 }
 
-
 #swatch6 {
-	width: 100px;
-	height: 100px;
 	background: #f27052;
 }
