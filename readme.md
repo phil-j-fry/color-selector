@@ -15,8 +15,10 @@ This repo is for testing purposes only, not production
 
 ## History
 
-18 jan 2017 - initial commit
+20 jan 2017 - moved origin from https://github.com/wix-private/color-selector
 20 jan 2017 - functioning version
+18 jan 2017 - initial commit
+
 
 ## Credits
 
