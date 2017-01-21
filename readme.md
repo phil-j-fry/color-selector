@@ -15,6 +15,10 @@ This repo is for testing purposes only, not production
 
 ## History
 
+20 jan 2017 - refactor scripts.js + replace swatch ids with color name
+
+<br>
+
 20 jan 2017 - begin refactoring on new branch refactor-challenge
 
 <br>
