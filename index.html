@@ -15,7 +15,7 @@
     	<link rel="stylesheet" type="text/css" href="main.css" />
     	<!-- best practice states we load css content in the head and javascript at the bottom of the body, remember we want the user to see and "feel"
 	the page or application is responding and loading. The sooner we can get to page load render the better user experience we will have. -->
-    	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    	
 
 	</head>
 
@@ -24,89 +24,6 @@
 	<body>
 
 
-<!-- Scripts -->
-
-		<!-- 
-			The two biggest things I see here:
-			1. There's a lot of javascript that's 'inline' in this HTML file. Can we move this javascript out to an external JS file?
-			2. We're calling document.ready() on each swatch. How could we include this all in one document.ready() statement?
-			
-			Further down the rabbit hole:
-			1. We're manually binding a click handler to each swatch by its ID. Ideally we want to avoid ID's _if_ possible because they create
-				nasty global variables that might break something later on down the line. How could we bind a handler to ALL potential swatches in fewer lines of code?
-				What if I was to expand this color picker app to support 256 colors? How could I painlessly add more HTML without having to write more JS?
-				What kind of selector could I iterate through to make this happen?
-			
-		-->
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Violet</div></span>" );
-                    });
-                });
-		</script>
-
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch1").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Purple</div></span>" );
-                    });
-                });
-        </script>
-
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch2").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Blue</div></span>" );
-                    });
-                });
-        </script>
-
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch3").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Aquamarine</div></span>" );
-                    });
-                });
-		</script>
-
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch4").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Green</div></span>" );
-                    });
-                });
-		</script>
-
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch5").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Gold</div></span>" );
-                    });
-                });
-		</script>
-
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch6").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Orange</div></span>" );
-                    });
-                });
-		</script>
 
 <!-- h1 content -->
 
@@ -142,12 +59,18 @@
 	</div>
 
 
-<!-- Dynamic Jquery placeholder -->
+<!--placeholder -->
 
 	<div class='float' id='right'>
 		<div id="placeholder">Color Selection Text Placeholder
 		</div>
 	</div>
+
+
+<!--scripts -->
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 
 	</body>
 
