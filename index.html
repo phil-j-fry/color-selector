@@ -25,31 +25,6 @@
 
 
 <!-- Scripts -->
-		<!-- 
-			This placeholder is placed by JS. But, shouldn't this be rendered on page load _before_ the document is ready? What if I was on a slow connection?
-			I would want my user to see content, even if the page wasn't loaded already and hadn't called 'ready'. How would I code this into the HTML _then_ later replace it
-			with JS?
-		-->
-		<script type="text/javascript">
-
-			$(document).ready(function(){
-			 $("#placeholder").html("Color Selection Text Placeholder");
-			});
-
-		</script>
-
-	<!-- example Script
-
-		<script type="text/javascript">
-                $(document).ready(function(){
-                    $("#swatch").click(function () {
-                         var color = $( this ).css( "color" );
-  						$( "#placeholder" ).html( "You have chosen <span style='color:" + color + ";'><div id='placeholder'>Violet</div>" + color + "</span>." );
-                    });
-                });
-		</script>
-
-	-->
 
 		<!-- 
 			The two biggest things I see here:
@@ -170,7 +145,7 @@
 <!-- Dynamic Jquery placeholder -->
 
 	<div class='float' id='right'>
-		<div id="placeholder">
+		<div id="placeholder">Color Selection Text Placeholder
 		</div>
 	</div>
 

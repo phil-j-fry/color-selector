@@ -15,6 +15,10 @@ This repo is for testing purposes only, not production
 
 ## History
 
+20 jan 2017 - begin refactoring on new branch refactor-challenge
+
+<br>
+
 20 jan 2017 - moved origin from https://github.com/wix-private/color-selector
 
 <br>
