@@ -88,44 +88,51 @@ p {
 
 }
 
-#swatch {
-	background: #733ca6;
-	color: #733ca6;
-}
-
-#swatch1 {
-	background: #b13dac;
-	color: #b13dac;
-}
-
-#swatch2 {
-	background: #459fed;
-	color: #459fed;
-}
-
-#swatch3 {
-	background: #3cc7c5;
-	color: #3cc7c5;
-}
-
-#swatch4 {
-	background: #65c888;
-	color: #65c888;
-}
-
-#swatch5 {
-	background: #faad4d;
-	color: #faad4d;;
-}
-
-#swatch6 {
-	background: #f27052;
-	color: #f27052;
-}
 
 #placeholder {
 	width: 400px;
 	padding-left: 160px;
-	font-size: 36px;
+	font-size: 48px;
+}
+
+
+
+
+/* Begin color map */
+
+
+#violet {
+	background: #733ca6;
+	color: #733ca6;
+}
+
+#purple {
+	background: #b13dac;
+	color: #b13dac;
+}
+
+#blue{
+	background: #459fed;
+	color: #459fed;
+}
+
+#aquamarine {
+	background: #3cc7c5;
+	color: #3cc7c5;
+}
+
+#green {
+	background: #65c888;
+	color: #65c888;
+}
+
+#gold {
+	background: #faad4d;
+	color: #faad4d;;
+}
+
+#orange {
+	background: #f27052;
+	color: #f27052;
 }
 
